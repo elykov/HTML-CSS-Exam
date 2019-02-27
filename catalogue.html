@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#" id="title">Guitar Shop</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">
+							Главная
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#">
+							Каталог товаров
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacts.html">
+							Контакты
+						</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Текст поиска...">
+
+					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Поиск</button>
+				</form>
+			</div>
+		</nav>
+	</header>
+
+	<!-- <div class="pos-f-t">
+		<nav class="navbar navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</nav>
+		<div class="collapse" id="navbarToggleExternalContent">
+			<div class="bg-dark-blue p-4">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-12 col-lg-5 col-xl-6" id="title">
+							Guitar Shop
+						</div>
+
+						<a class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2" href="index.html">Главная</a>
+						<a class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" id="current-page-a" href="catalogue.html">Каталог товаров</a>
+						<a class="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2" href="contacts.html">Контакты</a>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<section class="container">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+				<!-- Боковой фильтр -->
+				<div class="filter"> <!-- column -->	
+					<h5>Тип гитары</h5>
+					<div class="filter-item">
+						<div>
+							<input type="checkbox" name="guitarType" value="Классика" id="r11"/>
+								<label for="r11">Классика</label>
+								<br/>
+							<input type="checkbox" name="guitarType" value="Электро" id="r12"/>
+								<label for="r12">Электро</label>
+								<br/>
+							<input type="checkbox" name="guitarType" value="Аккустика" id="r13"/>
+								<label for="r13">Аккустика</label>
+								<br/>
+							<input type="checkbox" name="guitarType" value="Полуаккустика" id="r14"/>
+								<label for="r14">Полуаккустика</label>
+								<br/>
+							<input type="checkbox" name="guitarType" value="Электроаккустика" id="r15"/>
+								<label for="r15">Электроаккустика</label>
+								<br/>
+							<input type="checkbox" name="guitarType" value="Бас" id="r16"/>
+								<label for="r16">Бас</label>
+								<br/>
+						</div>
+					</div>
+
+					<hr>
+
+					<h5>Производитель</h5>
+					<div class="filter-item">
+						<div>
+							<input type="checkbox" name="guitarProducer" value="Cort" id="r21"/>
+								<label for="r21">Cort</label>
+								<br/>
+							<input type="checkbox" name="guitarProducer" value="Yamaha" id="r22"/>
+								<label for="r22">Yamaha</label>
+								<br/>
+							<input type="checkbox" name="guitarProducer" value="Gibson" id="r23"/>
+								<label for="r23">Gibson</label>
+								<br/>
+							<input type="checkbox" name="guitarProducer" value="Fender" id="r24"/>
+								<label for="r24">Fender</label>
+								<br/>
+							<input type="checkbox" name="guitarProducer" value="Ibanez" id="r25"/>
+								<label for="r25">Ibanez</label>
+							<br/>
+						</div>
+					</div>
+					
+					<hr>
+					<h5>Максимальная цена</h5>
+					<div class="filter-item">
+						<div>
+							<input type="text" name="price" value="5000"
+							style="width: 70%;"/>&nbsp;грн
+							<br/>
+							<input type="range" min="456" max="30000" value="5000" class="slider">
+						</div>
+					</div>
+
+					<hr>
+					<h5>Количество струн</h5>
+					<div class="filter-item">
+						<div>
+							<input type="checkbox" name="guitarType" value="4" id="r31"/>
+								<label for="r31">4</label>
+								<br/>
+							<input type="checkbox" name="guitarType" value="5" id="r32"/>
+								<label for="r32">5</label>
+								<br/>
+							<input type="checkbox" name="guitarType" value="6" id="r33"/>
+								<label for="r33">6</label>
+								<br/>
+							<input type="checkbox" name="guitarType" value="7" id="r34"/>
+								<label for="r34">7</label>
+								<br/>
+							<input type="checkbox" name="guitarType" value="8" id="r35"/>
+								<label for="r35">8</label>
+								<br/>
+							<input type="checkbox" name="guitarType" value="12" id="r36"/>
+								<label for="r36">12</label>
+								<br/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-sm-6 col-md-8 col-lg-9" style="padding: 20px;">
+				<!-- Гитары -->
+				<div class="row">
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://www.guitarinteractivemagazine.com/media/386399/cort-sunset-nylectric.jpg?mode=pad&quality=70&width=758&height=505&bgcolor=ffffff&rnd=131075354030000000" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Гитара классическая Cort Sunset Nylectric Black</p>
+							<div class="card-bottom">
+								<h5 class="card-title">12 285 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i1.rozetka.ua/goods/277006/cort_ad810_op_images_277006052.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Гитара акустическая Cort AD810 OP</p>
+							<div class="card-bottom">
+								<h5 class="card-title">2 999 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i1.rozetka.ua/goods/1383367/maxtone_wgc4010_nat_images_1383367071.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Гитара акустическая Maxtone WGC4010 NAT</p>
+							<div class="card-bottom">
+								<h5 class="card-title">1 899 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i1.rozetka.ua/goods/10198541/parksons_jb4111blk_images_10198541763.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Гитара акустическая Parksons JB4111 Black (JB4111blk)</p>
+							<div class="card-bottom">
+								<h5 class="card-title">2 282 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i2.rozetka.ua/goods/5495174/fender_squier_227046_images_5495174616.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Электрогитара Fender Squier Bullet Stratocaster HT HSS (227046) Arctic White</p>
+							<div class="card-bottom">
+								<h5 class="card-title">5 040 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i2.rozetka.ua/goods/2370057/cort_action_plus_bk_images_2370057065.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Басгитара Cort Action Plus Black (Action Plus BK)</p>
+							<div class="card-bottom">
+								<h5 class="card-title">5 678 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i1.rozetka.ua/goods/9023863/62656732_images_9023863084.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Электрогитара Fernandes Ravelle Deluxe (Black) - 17-3-13-184</p>
+							<div class="card-bottom">
+								<h5 class="card-title">16 207 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i1.rozetka.ua/goods/9493/maxtone_cgc3910_images_9493850.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Гитара классическая Maxtone CGC3910</p>
+							<div class="card-bottom">
+								<h5 class="card-title">1 853 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i2.rozetka.ua/goods/9491718/56241306_images_9491718915.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Гитара классическая Bandes CG-851C RD 39"</p>
+							<div class="card-bottom">
+								<h5 class="card-title">1 543 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i2.rozetka.ua/goods/8085017/alvarez_av_0009_images_8085017319.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Гитара классическая Alvarez RC26HCE (AV-0009)</p>
+							<div class="card-bottom">
+								<h5 class="card-title">7 432 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i2.rozetka.ua/goods/1319443/cort_ac70_op_with_bag_images_1319443760.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Гитара классическая Cort AC70 OP 3/4</p>
+							<div class="card-bottom">
+								<h5 class="card-title">3 785 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i2.rozetka.ua/goods/6442255/cort_gb34jj_3ts_images_6442255222.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Басгитара Cort GB34JJ 3-Tone Sunburst (gb34jj 3ts)</p>
+							<div class="card-bottom">
+								<h5 class="card-title">7 578 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i1.rozetka.ua/goods/9230750/fender_squier_224791_images_9230750921.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Электрогитара Fender Squier Bullet Mustang HH RW Black (224791)</p>
+							<div class="card-bottom">
+								<h5 class="card-title">5 040 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i2.rozetka.ua/goods/9230791/ibanez_226619_images_9230791213.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Электрогитара Ibanez RG421AHM Blue Moon Burst (226619)</p>
+							<div class="card-bottom">
+								<h5 class="card-title">10 220 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i1.rozetka.ua/goods/9230793/ibanez_225595_images_9230793341.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Электрогитара Ibanez RGAIX7FM Transparent Gray Flat (225595)</p>
+							<div class="card-bottom">
+								<h5 class="card-title">23 800 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i2.rozetka.ua/goods/2370006/cort_action_pj_opw_images_2370006601.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Басгитара Cort Action PJ Open Pore Walnut (Action PJ OPW)</p>
+							<div class="card-bottom">
+								<h5 class="card-title">4 732 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col-12 col-md-6 col-lg-4">
+						<div class="image-container">
+							<img src="https://i2.rozetka.ua/goods/10202289/warwick_katanabo4_oceanblue_images_10202289447.jpg" class="card-img-top" alt="">
+						</div>
+						<div class="card-body">
+							<p class="card-text">Басгитара Warwick Katana BO 4 Ocean Blue (KatanaBO4 OceanBlue)</p>
+							<div class="card-bottom">
+								<h5 class="card-title">46 536 грн</h5>
+								<a href="#" class="btn btn-primary">Купить</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>			
+		<div class="container">
+			<div class="row pays">
+				<div class="col">
+					<img src="images/pay/visa.png">
+				</div>
+				<div class="col">
+					<img src="images/pay/mastercard.png">
+				</div>
+				
+				<div class="col">
+					<img src="images/pay/paypal.png">
+				</div>
+
+				<div class="col">
+					<img src="images/pay/maestro.png">
+				</div>
+				
+				<div class="col">
+					<img src="images/pay/mir.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row footer-refs">
+				<div class="col">
+					<a href="http://facebook.com">Facebook</a>
+					<a href="http://instagram.com">Instagram</a>
+					<a href="http://whatsapp.com">WhatsApp</a>
+					<a href="http://vk.com">Вконтакте</a>
+				</div>
+
+				<div class="col">
+					<a href="#">FAQ</a>
+					<a href="#">О нас</a>
+					<a href="#">Контакты</a>
+				</div>
+				
+				<div class="col">
+					<a href="#">Русский</a>
+					<a href="#">Українська</a>
+					<a href="#">English</a>
+					<a href="#">Deutsch</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
