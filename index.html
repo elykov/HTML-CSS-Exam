@@ -3,69 +3,366 @@
 <head>
 	<title>Guitar Shop</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="#" id="title">Guitar Shop</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">
+							Главная
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="catalogue.html">
+							Каталог товаров
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacts.html">
+							Контакты
+						</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Текст поиска...">
+
+					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Поиск</button>
+				</form>
+			</div>
+		</nav>
+	</header>
+
+	<div class="screen-padding">
+		<h3 style="color: #acf;">
+			Есть вопросы? Обратитесь к нам по номеру телефона, email или на нашей форме запроса!
+		</h3>
+
+		<div style="display: flex; color: #fff; align-items: center; text-align: center;">
+			<div style="border-right: 1px solid #d9d9d7; width: 50%;">
+				<h4>
+					Наш номер телефона:
+				</h4>
+				<a href="tel:+38(012)-345-67-89">
+					+38(012)-345-67-89
+				</a>
+			</div>
+
+			<div style="width: 50%;">
+				<h4 style="color: white;">Наш E-mail:</h4>
+				<span>guitar-shop@mail.com</span>
+			</div>
+		</div>
+	</div>
+
+	<section> <!-- Carousel -->
+		<div style="background-color: black;">
+			<div id="carouselExampleCaptions" class="carousel slide page-center" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="images/index/logos.png" class="d-block w-100" alt="Ресурс не загружен.">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Наш магазин работает только с лучшими брендами*</h5>
+							<p>* - по мнению директора.</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/index/guitar-store.jpg" class="d-block w-100" alt="Ресурс не загружен.">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>У нас большой выбор электрогитар!</h5>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/index/guitar.jpg" class="d-block w-100" alt="Ресурс не загружен.">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Акция! С 01.02.2019 по 20.03.2019 скидка 0%!***</h5>
+							<p>*** - Детали уточнять у продавца.</p>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</section>
+	
+	<section class="screen-padding" style="color: white;">
+		<h3 style="text-align: center; color: lightgreen;">Мы продаем разные виды гитар по вашему вкусу и желанию.</h3>
+		<h5 style="text-align: center; margin: 10px 100px;">Гитары бывают разные: классические, аккустические, электрогитары, бас-гитары. Чаще всего гитары имеют 6 струн, некоторые 8 или 12. Басовые гитары имеют 4 или 5 струн. Аккустические гитары делятся на Джамбо и Дредноут. Эти гитары также предназначены для игры <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B5%D0%BA%D1%82%D1%80">медиатором</a>, по-этому на них стоят металлические струны, а на корпусе предохраняющая пластиковая накладка.</h5>
+	</section>
+		
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-6 col-lg-4">
+				<h4 class="roll-card-head">Классическая</h4>
+				<div class="roll-card">
+					<div class="front">
+						<img class="box1" src="images/guitars/classical.png">
+					</div>
+
+					<div class="back">
+						<p class="box2">
+							На классических гитарах стоят нейлоновые струны, у них широкий гриф, и играют на них обычно без использования медиатора. Звук получается мягкий и негромкий, поэтому эти инструменты наиболее подходят для игры классической музыки. Если вы купили гитару с нейлоновыми струнами, то ни в коем случае не ставьте на неё металл. Это может привести к повреждению инструмента.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-4">
+				<h4 class="roll-card-head">Дредноут</h4>
+				<div class="roll-card">
+					<div class="front">
+						<img class="box1" src="images/guitars/drednought.png">
+					</div>
+
+					<div class="back">
+						<p class="box2">
+							Это самые популярные акустические гитары для игры неклассической музыки. Этим они обязаны громкому звуку и приспособленности к игре в самых разных стилях. Их также их называют Кантри или Вестерн гитарами.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-4">
+				<h4 class="roll-card-head">Джамбо</h4>
+				<div class="roll-card">
+					<div class="front">
+						<img class="box1" src="images/guitars/jumbo.png">
+					</div>
+
+					<div class="back">
+						<p class="box2">
+							Эти гитары отличаются большими корпусами и очень громким (даже по сравнению с дредноутом) звуком. Они наиболее подходят для аккомпанемента и используются, прежде всего, в Рок, Поп, Блюз, Кантри музыке. В наше время эти гитары стали довольно редкими.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-4">
+				<h4 class="roll-card-head">Электрогитара</h4>
+				<div class="roll-card">
+					<div class="front">
+						<img class="box1" src="images/guitars/electrical.png">
+					</div>
+
+					<div class="back">
+						<p class="box2">
+							Особенность современной электрогитары это цельный тонкий корпус, в котором почти нет пустого пространства. Струны у электрогитары металлические, а звук снимается звукоснимателями, для прослушивания которых необходим усилитель. При игре без усилителя звук очень тихий, по-этому без усилителя на ней играть почти невозможно. Электрогитара используется для игры риффами или соло.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-4">
+				<h4 class="roll-card-head">Полуаккустическая</h4>
+				<div class="roll-card">
+					<div class="front">
+						<img class="box1" src="images/guitars/jazz.png">
+					</div>
+
+					<div class="back">
+						<p class="box2">
+							Также джазовая гитара. Сочетает в себе плюсы как акустики так и электрогитары. От первой ей достался полый корпус с резонирующими отверстиями, от второй звукосниматели и остальная электроника. Играть на ней без усилителя нельзя, так как отсутствует большое резонаторное отверстие на верхней деке и пустого пространства внутри неё слишком мало.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-4">
+				<h4 class="roll-card-head">Бас</h4>
+				<div class="roll-card">
+					<div class="front">
+						<img class="box1" src="images/guitars/bass.png">
+					</div>
+
+					<div class="back">
+						<p class="box2">
+							Бас гитара отличается от остальных длинным грифом и меньшим в, отличии от остальных гитар, числом струн (4 или 5), также струны толще чем у обычной электрогитары. Они используются, прежде всего, для придания глубины и насыщения звуковой гаммы музыкального произведения.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="screen-padding"> <!-- Добавить какого-то текста для красоты --> 
+		<h4>asd dhg sas hsdaf df afdsgfdgf adsgfd adsfbdnf adxfr rt re adf </h4>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<h4>asd dhg sas hsdaf df afdsgfdgf adsgfd adsfbdnf adxfr rt re adf </h4>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<h4>asd dhg sas hsdaf df afdsgfdgf adsgfd adsfbdnf adxfr rt re adf </h4>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</section>
+
+	<footer>
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-5">
-					qasfgsaf
+			<div class="row pays">
+				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+					<img src="images/pay/visa.png">
+				</div>
+				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+					<img src="images/pay/paypal.png">
 				</div>
 
-				<div class="col-lg-7">
-					<a id="current-page-a" href="index.html">Главная</a>
-					<a href="catalogue.html">Каталог товаров</a>
-					<a href="contacts.html">Контакты</a>
+				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+					<img src="images/pay/mastercard.png">
+				</div>
+				
+				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+					<img src="images/pay/mir.png">
+				</div>
+				
+				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+					<img src="images/pay/maestro.png">
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+					<img src="images/pay/privat24.png">
 				</div>
 			</div>
 		</div>
 
-		<!-- <div></div>
 		<div class="container">
-			<div class="row">
-				<a id="current-page-a" class="col-sm-6 col-md-4" href="index.html">Главная</a>
-				<a href="catalogue.html" class="col-sm-6 col-md-4">Каталог товаров</a>
-				<a href="contacts.html" class="col-sm-6 col-md-4">Контакты</a>
-			</div>
-		</div> -->
-	</header>
+			<div class="row footer-refs">
+				<div class="col-6 col-md-3">
+					<h5>О нас</h5>
+					<h6>Guitar shop - украинская компания для всех музыканов!</h6>
+				</div>
 
-	<section>
-	</section>
-	
-	<footer>
-			<div class="container footer-images">
-				<img src="images/pay/visa.png">
-				<img src="images/pay/mastercard.png">
-				<img src="images/pay/paypal.png">
-				<img src="images/pay/maestro.png">
-				<img src="images/pay/mir.png">
-			</div>
-
-			<div class="container">
-				<div class="row footer-refs">
-					<div class="col-md-4">
-						<a href="http://facebook.com">Facebook</a>
-						<a href="http://instagram.com">Instagram</a>
-						<a href="http://whatsapp.com">WhatsApp</a>
-						<a href="http://vk.com">Вконтакте</a>
-					</div>
-					<div class="col-md-4">
-						<a href="">FAQ</a>
-						<a href="">О нас</a>
-						<a href="">Контакты</a>
-					</div>
-					<div class="col-md-4">
-						<a href="">Русский</a>
-						<a href="">Українська</a>
-						<a href="">English</a>
-						<a href="">Deutsch</a>
+				<div class="col-6 col-md-3">
+					<h5>Мы в соц сетях</h5>
+					<div id="soc-network" class="flex-content-s-b">
+						<a href="http://facebook.com">
+							<img src="icons/facebook.png">
+						</a>
+						<a href="http://instagram.com">
+							<img src="icons/instagram.png">
+						</a>
+						<a href="http://whatsapp.com">
+							<img src="icons/whatsapp.png">
+						</a>
+						<a href="http://twitter.com">
+							<img src="icons/twitter.png">
+						</a>		
 					</div>
 				</div>
+
+				<div class="col-6 col-md-3">
+					<h5>Контакты</h5>
+					<h6>+38(012)-345-67-89</h6>
+					<h6>guitar-shop@mail.com</h6>
+					<a href="#">Связь с менеджером</a>
+				</div>
+				
+				<div class="col-6 col-md-3">
+					<h5>Язык</h5>
+					<a href="#">Русский</a>
+					<a href="#">Українська</a>
+					<a href="#">English</a>
+					<a href="#">Deutsch</a>
+				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 </body>
 </html>
+
+<!-- <div class="container">
+  	<div class="row">
+		<div class="col-12 col-sm-6 col-lg-4 guitar-card">
+			<h4>Классическая</h4>
+			<img src="images/guitars/classical.png">
+			<p>На классических гитарах стоят нейлоновые струны, у них широкий гриф, и играют на них обычно без использования медиатора. Звук получается мягкий и негромкий, поэтому эти инструменты наиболее подходят для игры классической музыки. Если вы купили гитару с нейлоновыми струнами, то ни в коем случае не ставьте на неё металл. Это может привести к повреждению инструмента. </p>
+		</div>
+
+		<div class="col-12 col-sm-6 col-lg-4">
+			<div class="guitar-card">
+				<h4>Дредноут</h4>
+				<img src="images/guitars/drednought.png">
+				<p>Это самые популярные акустические гитары для игры неклассической музыки. Этим они обязаны громкому звуку и приспособленности к игре в самых разных стилях.
+				Их также их называют Кантри или Вестерн гитарами.</p>
+			</div>
+		</div>
+		
+		<div class="col-12 col-sm-6 col-lg-4">
+			<div class="guitar-card">
+				<h4>Джамбо</h4>
+				<img src="images/guitars/jumbo.png">
+				<p>
+					Эти гитары отличаются большими корпусами и очень громким (даже по сравнению с дредноутом) звуком. Они наиболее подходят для аккомпанемента и используются, прежде всего, в Рок, Поп, Блюз, Кантри музыке. В наше время эти гитары стали довольно редкими. 
+				</p>
+			</div>
+		</div>
+		
+		<div class="col-12 col-sm-6 col-lg-4">
+			<div class="guitar-card">
+				<h4>Электрогитара</h4>
+				<img src="images/guitars/electrical.png">
+				<p>Особенность современной электрогитары это цельный тонкий корпус, в котором почти нет пустого пространства. Струны у электрогитары металлические, а звук снимается звукоснимателями, для прослушивания которых необходим усилитель. При игре без усилителя звук очень тихий, по-этому без усилителя на ней играть почти невозможно. Электрогитара предназначена для игры <a href="http://play-info-guitar.ru/guitar-info/dly-gitaristov/chto-takoe-gitarnyie-riffyi">риффами</a> или соло.
+				</p>
+				На электрогитарах помимо всего часто устанавливается несколько различных звукоснимателей, для того чтобы разнообразить тембр звука, а также регуляторы громкости и тембра.
+			</div>
+		</div>
+		
+		<div class="col-12 col-sm-6 col-lg-4">
+			<div class="guitar-card">
+				<h4>Полуаккустическая</h4>
+				<img src="images/guitars/jazz.png">
+				<p>Также джазовая гитара. Сочетает в себе плюсы как акустики так и электрогитары. От первой ей достался полый корпус с резонирующими отверстиями, от второй звукосниматели и остальная электроника. Играть на ней без усилителя нельзя, так как отсутствует большое резонаторное отверстие на верхней деке и пустого пространства внутри неё слишком мало.</p>
+			</div>
+		</div>
+		
+		<div class="col-12 col-sm-6 col-lg-4">
+			<div class="guitar-card">
+				<img src="images/guitars/bass.png">
+				<h4>Бас</h4>
+				<p>Бас гитара отличается от остальных длинным грифом и меньшим в, отличии от остальных гитар, числом струн (4 или 5), также струны толще чем у обычной электрогитары. Они используются, прежде всего, для придания глубины и насыщения звуковой гаммы музыкального произведения.</p>
+			</div>
+		</div>
+	</div>
+</div> -->

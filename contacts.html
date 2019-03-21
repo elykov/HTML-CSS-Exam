@@ -8,56 +8,158 @@
 	</head>
 	<body>
 		<header>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
-						qasfgsaf
-					</div>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<a class="navbar-brand" href="#" id="title">Guitar Shop</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-					<div class="col-lg-7">
-						<a href="index.html">Главная</a>
-						<a href="catalogue.html">Каталог товаров</a>
-						<a id="current-page-a" href="contacts.html">Контакты</a>
-					</div>
+				<div class="collapse navbar-collapse" id="navbarToggler">
+					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">
+								Главная
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="catalogue.html">
+								Каталог товаров
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#">
+								Контакты
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Текст поиска...">
+
+						<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Поиск</button>
+					</form>
 				</div>
-			</div>	
+			</nav>
 		</header>
 
-		<section>
-		<!--<input type="tel" name="telephone-number" placeholder="+380XXXXXXXXX"> -->
-
-		</section>
-
-		<footer>
-			<div class="container footer-images">
-				<img src="images/pay/visa.png">
-				<img src="images/pay/mastercard.png">
-				<img src="images/pay/paypal.png">
-				<img src="images/pay/maestro.png">
-				<img src="images/pay/mir.png">
-			</div>
-
-			<div class="container">
-				<div class="row footer-refs">
-					<div class="col-md-4">
-						<a href="http://facebook.com">Facebook</a>
-						<a href="http://instagram.com">Instagram</a>
-						<a href="http://whatsapp.com">WhatsApp</a>
-						<a href="http://vk.com">Вконтакте</a>
+		<main>
+			<form>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="inputEmail4">Email</label>
+						<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
 					</div>
-					<div class="col-md-4">
-						<a href="">FAQ</a>
-						<a href="">О нас</a>
-						<a href="">Контакты</a>
-					</div>
-					<div class="col-md-4">
-						<a href="">Русский</a>
-						<a href="">Українська</a>
-						<a href="">English</a>
-						<a href="">Deutsch</a>
+					<div class="form-group col-md-6">
+						<label for="inputPassword4">Password</label>
+						<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
 					</div>
 				</div>
+				<div class="form-group">
+					<label for="inputAddress">Address</label>
+					<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+				</div>
+				<div class="form-group">
+					<label for="inputAddress2">Address 2</label>
+					<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="inputCity">City</label>
+						<input type="text" class="form-control" id="inputCity">
+					</div>
+					<div class="form-group col-md-4">
+						<label for="inputState">State</label>
+						<select id="inputState" class="form-control">
+						<option selected>Choose...</option>
+						<option>...</option>
+						</select>
+					</div>
+					<div class="form-group col-md-2">
+						<label for="inputZip">Zip</label>
+						<input type="text" class="form-control" id="inputZip">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="gridCheck">
+						<label class="form-check-label" for="gridCheck">
+						Check me out
+						</label>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Sign in</button>
+			</form>
+		</main>
+
+		<footer>			
+		<div class="container">
+			<div class="row pays">
+				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+					<img src="images/pay/visa.png">
+				</div>
+				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+					<img src="images/pay/paypal.png">
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+					<img src="images/pay/mastercard.png">
+				</div>
+				
+				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+					<img src="images/pay/mir.png">
+				</div>
+				
+				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+					<img src="images/pay/maestro.png">
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+					<img src="images/pay/privat24.png">
+				</div>
 			</div>
-		</footer>
+		</div>
+
+		<div class="container">
+			<div class="row footer-refs">
+				<div class="col-6 col-md-3">
+					<h5>О нас</h5>
+					<h6>Guitar shop - украинская компания для всех музыканов!</h6>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<h5>Мы в соц сетях</h5>
+					<div id="soc-network" class="flex-content-s-b">
+						<a href="http://facebook.com">
+							<img src="icons/facebook.png">
+						</a>
+						<a href="http://instagram.com">
+							<img src="icons/instagram.png">
+						</a>
+						<a href="http://whatsapp.com">
+							<img src="icons/whatsapp.png">
+						</a>
+						<a href="http://twitter.com">
+							<img src="icons/twitter.png">
+						</a>		
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<h5>Контакты</h5>
+					<h6>+38(012)-345-67-89</h6>
+					<h6>guitar-shop@mail.com</h6>
+					<a href="#">Связь с менеджером</a>
+				</div>
+				
+				<div class="col-6 col-md-3">
+					<h5>Язык</h5>
+					<a href="#">Русский</a>
+					<a href="#">Українська</a>
+					<a href="#">English</a>
+					<a href="#">Deutsch</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 	</body>
 </html>
