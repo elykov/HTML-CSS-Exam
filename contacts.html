@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<title>Guitar Shop - Контакты</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	</head>
 	<body>
 		<header>
@@ -25,12 +25,12 @@
 						<li class="nav-item">
 							<a class="nav-link" href="catalogue.html">
 								Каталог товаров
+								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link active" href="#">
 								Контакты
-								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 					</ul>
@@ -43,124 +43,140 @@
 			</nav>
 		</header>
 
-		<main>
-			<form>
-				<div class="form-row">
-					<div class="form-group col-md-6">
-						<label for="inputEmail4">Email</label>
-						<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+		<main class="contacts-style">
+			<div class="screen-padding">
+				<h3>Вы можете оставить любой интереснующий Вас вопрос. Мы свяжемся с Вами максимально быстро!</h3>
+				<h5>Для этого заполните следующую форму. Обязательно укажите Ваше имя и метод ответа: телефон или email.</h5>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-5">
+						<img class="image-call" src="images/call-center.jpg">
 					</div>
-					<div class="form-group col-md-6">
-						<label for="inputPassword4">Password</label>
-						<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="inputAddress">Address</label>
-					<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-				</div>
-				<div class="form-group">
-					<label for="inputAddress2">Address 2</label>
-					<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-				</div>
-				<div class="form-row">
-					<div class="form-group col-md-6">
-						<label for="inputCity">City</label>
-						<input type="text" class="form-control" id="inputCity">
-					</div>
-					<div class="form-group col-md-4">
-						<label for="inputState">State</label>
-						<select id="inputState" class="form-control">
-						<option selected>Choose...</option>
-						<option>...</option>
-						</select>
-					</div>
-					<div class="form-group col-md-2">
-						<label for="inputZip">Zip</label>
-						<input type="text" class="form-control" id="inputZip">
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="gridCheck">
-						<label class="form-check-label" for="gridCheck">
-						Check me out
-						</label>
+
+					<div class="col-12 col-md-7">
+						<form>
+							<div class="form-row">
+								<div class="form-group col-md-12">
+									<label for="inputName">Введите имя</label>
+									<input type="text" class="form-control" id="inputName" placeholder="Как к Вам обращаться?">
+								</div>
+
+								<div class="form-group col-md-12 col-lg-6">
+									<label for="inputEmail">Введите Email</label>
+									<input type="email" class="form-control" id="inputEmail" placeholder="Введите Email...">
+								</div>
+
+								<div class="form-group col-md-12 col-lg-6">
+									<label for="inputTelephone">Введите номер телефона</label>
+									<input type="tel" class="form-control" id="inputPassword" placeholder="+38(0XX)-XXX-XX-XX">
+								</div>
+
+								<div class="form-group col-md-12">
+									<label for="inputAsk">Что бы Вы хотели у нас узнать?</label>
+									<textarea class="form-control" id="inputAsk"></textarea>
+								</div>
+							</div>
+
+							<button type="submit" class="btn btn-primary">Отправить</button>
+						</form>
 					</div>
 				</div>
-				<button type="submit" class="btn btn-primary">Sign in</button>
-			</form>
+			</div>
+
+			<div class="screen-padding">
+
+				<h3>Вы можете посетить наш новый магазин!</h3>
+				<p>
+					<h5>Недавно в Киеве было открытие первого отделения Guitar Shop. 
+					<br>
+					Там Вы сможете не только просмотреть весь товар, а поиграть и услышать!</h5>
+				</p>
+				<h3>Найти нас можно по адресу улица Жилянская 128/28, 9 этаж.</h3>
+				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.218729047147!2d30.494996129243564!3d50.443430498717156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef37449c687%3A0x250b5f5f4156a82!2z0YPQuy4g0JbQuNC70Y_QvdGB0LrQsNGPLCAxMjgvMjgsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1553549015912" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+				<h3>
+					Также Вы можете позвонить нам на номер 
+					<a href="tel:+38(012)-345-67-89">+38(012)-345-67-89</a>
+				</h3>
+				<h3>
+					или написать на наш Email: guitar-shop@mail.com
+				</h3>
+				<h6>Стоимость звонка согласно Вашего оператора.</h6>
+			</div>
 		</main>
 
-		<footer>			
-		<div class="container">
-			<div class="row pays">
-				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
-					<img src="images/pay/visa.png">
-				</div>
-				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
-					<img src="images/pay/paypal.png">
-				</div>
+		<footer>
+			<div class="container">
+				<div class="row pays">
+					<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+						<img src="images/pay/visa.png">
+					</div>
+					<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+						<img src="images/pay/paypal.png">
+					</div>
 
-				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
-					<img src="images/pay/mastercard.png">
-				</div>
-				
-				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
-					<img src="images/pay/mir.png">
-				</div>
-				
-				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
-					<img src="images/pay/maestro.png">
-				</div>
+					<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+						<img src="images/pay/mastercard.png">
+					</div>
+					
+					<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+						<img src="images/pay/mir.png">
+					</div>
+					
+					<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+						<img src="images/pay/maestro.png">
+					</div>
 
-				<div class="col-6 col-md-4 col-lg-2 flex-content-center">
-					<img src="images/pay/privat24.png">
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row footer-refs">
-				<div class="col-6 col-md-3">
-					<h5>О нас</h5>
-					<h6>Guitar shop - украинская компания для всех музыканов!</h6>
-				</div>
-
-				<div class="col-6 col-md-3">
-					<h5>Мы в соц сетях</h5>
-					<div id="soc-network" class="flex-content-s-b">
-						<a href="http://facebook.com">
-							<img src="icons/facebook.png">
-						</a>
-						<a href="http://instagram.com">
-							<img src="icons/instagram.png">
-						</a>
-						<a href="http://whatsapp.com">
-							<img src="icons/whatsapp.png">
-						</a>
-						<a href="http://twitter.com">
-							<img src="icons/twitter.png">
-						</a>		
+					<div class="col-6 col-md-4 col-lg-2 flex-content-center">
+						<img src="images/pay/privat24.png">
 					</div>
 				</div>
+			</div>
 
-				<div class="col-6 col-md-3">
-					<h5>Контакты</h5>
-					<h6>+38(012)-345-67-89</h6>
-					<h6>guitar-shop@mail.com</h6>
-					<a href="#">Связь с менеджером</a>
-				</div>
-				
-				<div class="col-6 col-md-3">
-					<h5>Язык</h5>
-					<a href="#">Русский</a>
-					<a href="#">Українська</a>
-					<a href="#">English</a>
-					<a href="#">Deutsch</a>
+			<div class="container">
+				<div class="row footer-refs">
+					<div class="col-6 col-md-3">
+						<h5>О нас</h5>
+						<h6>Guitar shop - украинская компания для всех музыканов!</h6>
+					</div>
+
+					<div class="col-6 col-md-3">
+						<h5>Мы в соц сетях</h5>					
+						<div id="soc-network" class="flex-content-s-b">
+							<a href="https://facebook.com">
+								<img src="icons/facebook.png">
+							</a>
+							<a href="https://instagram.com">
+								<img src="icons/instagram.png">
+							</a>
+							<a href="https://whatsapp.com">
+								<img src="icons/whatsapp.png">
+							</a>
+							<a href="https://twitter.com">
+								<img src="icons/twitter.png">
+							</a>		
+						</div>
+					</div>
+
+					<div class="col-6 col-md-3">
+						<h6>@GuitarShop Ua</h6>
+						<h6>Ул. Жилянская, 128/28</h6>
+						<h6>04080, Киев, Украина</h6>
+						<h6>+38(012)-345-67-89</h6>
+						<h6>guitar-shop@mail.com</h6>
+					</div>
+					
+					<div class="col-6 col-md-3">
+						<h5>Язык</h5>
+						<a href="#">Русский</a>
+						<a href="#">Українська</a>
+						<a href="#">English</a>
+						<a href="#">Deutsch</a>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
 	</body>
 </html>

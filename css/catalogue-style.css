@@ -1,0 +1,97 @@
+/* input[type="range"] */
+/* Filter */
+
+.filter {
+	padding: 10px; 
+	border: 5px;
+	text-decoration: border;
+	color: white;
+	font-family: 'PlayfairDisplay';
+}
+
+.filter-header{
+	color: khaki;
+	font-size: 21px;
+}
+
+.filter-item label{
+	font-size: 15px;
+}
+
+.filter-item>* {
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+.filter-item input {
+	margin-right: 5px;
+}
+
+.filter label:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.filter a{
+	text-decoration-color: khaki;	
+}
+
+label {
+	margin-bottom: 1px; 
+	color: wheat;
+}
+
+.filter hr {
+	border: solid 1px #0000AA;
+}
+
+ /*card */
+
+.card{
+	padding: 0px 7px;
+}
+
+.card-body{
+	padding: 10px;
+	padding-bottom: 12px;
+}
+
+.card-text {
+	font-size: 18px;
+	font-family: 'PlayfairDisplay';
+}
+
+.card-title {
+	color: orange;
+}
+
+.card-bottom {
+	align-items: center;
+	font-family: 'SvyaznoySans';
+}
+
+.image-container {
+	height: 300px;
+	display: flex;
+	align-items: center;
+}
+
+.image-container img, .image-call {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.image-call{
+	border-radius: 40px;
+}
+
+.image-container img:hover{
+	border: solid 2px black;
+	border-radius: 30px;
+	background-color: white;
+	transition-duration: 350ms;
+	z-index: 1;
+	/*scaleX, skewY, skewX, scaleY, translateX, translateY*/
+	transform: matrix(1.7, 0, 0, 1.7, 0, 50);
+}

@@ -1,0 +1,96 @@
+.roll-card {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	perspective: 1000px;
+	margin: 0 auto;
+}
+
+.roll-card .front,
+.roll-card .back {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	transition-property: all; 
+	transition-duration: 1s;
+}
+
+.roll-card-head {
+	font: 24pt sans-serif;
+	text-align: center;
+	color: white;
+	font-family: 'AcademyOldClassic';
+}
+
+.box1, .box2{
+	height: 100%;
+	background-color: #152535;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+.box1{
+	width: 100%;
+	object-fit: contain;
+}
+
+.center-items {
+	display: flex; 
+	align-items: center; 
+	text-align: center;
+}
+
+.box2 {
+	color: white;
+	font-size: 17px;
+	padding-right: 3px;
+	padding-left: 3px;
+	font-family: 'FortuneC-Italic';
+}
+
+#septum{
+	border-right: 1px solid white; 
+	width: 50%;
+}
+
+.roll-card .back {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+}
+
+.roll-card:hover .front{
+	transform: rotateY(180deg);
+}
+
+.roll-card:hover .back{
+	transform: rotateY(0deg);
+}
+
+.screen-padding {
+	padding: 2%;
+	text-align: center; 
+	color: white;
+	font-size: 20px;
+	font-family: 'AcademyOldClassic';
+}
+
+#infoContainer1 {
+	text-align: center; 
+	margin: 10px 100px;
+}
+
+#infoContainer2 div{
+	padding: 3px 2%;
+}
+
+#info {
+	color: #eee;
+	font-family: 'AcademyOldClassic'; 
+}
+
+.carousel {
+	color: #ccc;
+	text-shadow: 2px 2px black;
+	font-family: 'SvyaznoySans';
+}
