@@ -199,6 +199,7 @@ label {
 	font: 24pt sans-serif;
 	text-align: center;
 	color: white;
+	font-family: AcademyOldClassic;
 }
 
 .box1, .box2{
@@ -213,14 +214,29 @@ label {
 	object-fit: contain;
 }
 
-.box2 {
-	display: flex;
-	align-items: center;
-	color: white;
+.center-items, .box2 {
+	display: flex; 
+	align-items: center; 
 	text-align: center;
 }
 
-.roll-card .back{
+.box2 {
+	/*display: flex;*/
+	/*align-items: center;*/
+	/*text-align: center;*/
+	color: white;
+	font-family: FortuneC-Italic;
+	font-size: 17px;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+#septum{
+	border-right: 1px solid white; 
+	width: 50%;"
+}
+
+.roll-card .back {
 	transform: rotateY(-180deg);
 	backface-visibility: hidden;
 }
@@ -237,6 +253,28 @@ label {
 	padding: 2%;
 	text-align: center; 
 	color: white;
+	font-size: 20px;
+	font-family: AcademyOldClassic;
+}
+
+#infoContainer1 {
+	text-align: center; 
+	margin: 10px 100px;
+}
+
+#infoContainer2 div{
+	padding: 3px 2%;
+}
+
+#info {
+	font-family: 'AcademyOldClassic'; 
+	color: #eee;
+}
+
+.carousel {
+	font-family: 'SvyaznoySans'; /*SvyaznoySans*/
+	color: #ccc;
+	text-shadow: 2px 2px black;
 }
 
 

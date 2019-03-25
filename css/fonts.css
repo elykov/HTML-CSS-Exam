@@ -2,3 +2,56 @@
 	font-family: 'RibbonFont';
 	src: url(../fonts/Ribbon131.otf);
 }
+
+@font-face{
+	font-family: 'FortuneC-Italic';
+	src: url(../fonts/FortuneC-Italic.otf);
+}
+
+@font-face{
+	font-family: 'EurostileExtRoman';
+	src: url(../fonts/EurostileExtRoman.ttf);
+}
+
+@font-face{
+	font-family: 'AcademyOldClassic';
+	src: url(../fonts/AcademyOldClassic.ttf);
+}
+
+@font-face{
+	font-family: 'NimbusSans';
+	src: url(../fonts/NimbusSans.otf);
+}
+
+@font-face{
+	font-family: 'GoudyTrajan';
+	src: url(../fonts/GoudyTrajan.otf);
+}
+
+@font-face{
+	font-family: 'SvyaznoySans';
+	src: url(../fonts/SvyaznoySans.otf);
+}
+
+
+@font-face{
+	font-family: 'PlayfairDisplay';
+	src: url(../fonts/PlayfairDisplay.ttf);
+}
+
+
+@font-face{
+	font-family: 'CCC-Regular';
+	src: url(../fonts/CCCutthroatInt-Regular.ttf);
+}
+
+/*@font-face{
+	font-family: 'Carolus';
+	src: url(../fonts/Carolus.ttf);
+}
+
+@font-face{
+	font-family: 'Literature';
+	src: url(../fonts/Literaturnaya_Plain.otf);
+}
+*/
