@@ -49,7 +49,7 @@
 	font-family: 'FortuneC-Italic';
 }
 
-#septum{
+#septum {
 	border-right: 1px solid white; 
 	width: 50%;
 }
@@ -59,7 +59,7 @@
 	backface-visibility: hidden;
 }
 
-.roll-card:hover .front{
+.roll-card:hover .front {
 	transform: rotateY(180deg);
 }
 
